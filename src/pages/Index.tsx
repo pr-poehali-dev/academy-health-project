@@ -1,8 +1,6 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
-const HERO_IMAGE = "https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/files/3d367e0c-fb0a-4ec1-8605-6cb79bd02189.jpg";
-
 const schools = [
   {
     icon: "Droplets",
@@ -125,16 +123,11 @@ export default function Index() {
       {/* HERO */}
       <section
         id="hero"
-        className="relative min-h-[90vh] flex items-center pt-16 overflow-hidden"
+        className="relative min-h-[90vh] flex items-center pt-16 overflow-hidden bg-[#0b2a38]"
       >
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${HERO_IMAGE})` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0f2d3d]/88 via-[#0f2d3d]/60 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0f2d3d]/50 to-transparent" />
         <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-cyan-400/10 blur-3xl" />
         <div className="absolute bottom-10 right-40 w-48 h-48 rounded-full bg-green-400/10 blur-2xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-cyan-600/5 blur-3xl" />
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 py-16">
           <div className="max-w-xl animate-slide-up">
