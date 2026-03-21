@@ -123,29 +123,25 @@ export default function Index() {
       {/* HERO */}
       <section
         id="hero"
-        className="relative min-h-[90vh] flex items-center pt-16 overflow-hidden bg-[#0b2a38]"
+        className="relative min-h-[90vh] flex items-center pt-16 overflow-hidden bg-white"
       >
-        <div className="absolute top-20 right-10 w-72 h-72 rounded-full bg-cyan-400/10 blur-3xl" />
-        <div className="absolute bottom-10 right-40 w-48 h-48 rounded-full bg-green-400/10 blur-2xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-cyan-600/5 blur-3xl" />
-
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 py-16">
           <div className="max-w-xl animate-slide-up">
-            <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur border border-white/25 rounded-full px-4 py-1.5 mb-6">
-              <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              <span className="text-white/90 text-sm font-medium">
+            <div className="inline-flex items-center gap-2 bg-cyan-50 border border-cyan-200 rounded-full px-4 py-1.5 mb-6">
+              <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+              <span className="text-cyan-700 text-sm font-medium">
                 Онлайн-обучение · Бесплатно
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-800 leading-tight mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               Академия<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-green-500">
                 здоровья
               </span>
             </h1>
 
-            <p className="text-white/80 text-lg sm:text-xl leading-relaxed mb-8">
+            <p className="text-slate-500 text-lg sm:text-xl leading-relaxed mb-8">
               Уникальный проект на базе Махневской районной больницы.
               Пройдите обучение по 4 направлениям и получите именной сертификат.
             </p>
@@ -160,7 +156,7 @@ export default function Index() {
               </button>
               <button
                 onClick={() => scrollTo("contacts", "Контакты")}
-                className="flex items-center justify-center gap-2 bg-white/15 backdrop-blur hover:bg-white/25 border border-white/30 text-white font-semibold px-7 py-3.5 rounded-xl transition-all"
+                className="flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 border border-slate-200 text-slate-700 font-semibold px-7 py-3.5 rounded-xl transition-all"
               >
                 <Icon name="Phone" size={18} />
                 Записаться
@@ -176,10 +172,10 @@ export default function Index() {
             ].map((s) => (
               <div
                 key={s.text}
-                className="flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-xl px-4 py-2"
+                className="flex items-center gap-2 bg-slate-50 border border-slate-200 rounded-xl px-4 py-2"
               >
-                <Icon name={s.icon as "BookOpen"} size={16} className="text-cyan-300" />
-                <span className="text-white/90 text-sm font-medium">{s.text}</span>
+                <Icon name={s.icon as "BookOpen"} size={16} className="text-cyan-500" />
+                <span className="text-slate-700 text-sm font-medium">{s.text}</span>
               </div>
             ))}
           </div>
