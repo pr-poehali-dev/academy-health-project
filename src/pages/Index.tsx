@@ -182,6 +182,63 @@ export default function Index() {
         </div>
       </section>
 
+      {/* ANNOUNCEMENT */}
+      <section className="py-12 bg-amber-50 border-y border-amber-200">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center shrink-0">
+              <Icon name="Bell" size={20} className="text-white" />
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-black text-slate-800" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              Важная информация
+            </h2>
+          </div>
+
+          <div className="bg-white rounded-2xl border border-amber-200 shadow-sm p-6 sm:p-8 text-slate-700 leading-relaxed space-y-4 text-base sm:text-lg">
+            <p className="font-bold text-slate-800 text-lg sm:text-xl">Уважаемые пациенты!</p>
+
+            <p>
+              Информируем Вас о том, что все действия, совершённые в Вашей электронной карте, такие, как запись на приём к врачу, направления на лабораторные и инструментальные методы исследований, прикреплённые результаты исследований, оформленные протоколы консультаций и прочие, могут приходить Вам на портал «Госуслуги» и в сообщения приложения «Мах».
+            </p>
+
+            <div>
+              <p className="font-semibold text-slate-800 mb-2">Основные формулировки сообщений:</p>
+              <ul className="space-y-1.5 pl-2">
+                {[
+                  "Протокол консультации",
+                  "Протокол исследований",
+                  "Запись на приём",
+                  "Направление на госпитализацию, восстановительное лечение, обследование или консультацию",
+                  "Эпикриз по законченному случаю амбулаторный",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="mt-2 w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <p>
+              Напоминаем, что портал «Госуслуги» и приложение «Мах» не связаны с рабочей программой поликлиники. В связи с этим сообщения могут приходить с опозданием. Также оповещаем, что некоторые действия и результаты отображаться не будут.
+            </p>
+
+            <p>
+              Если у Вас возникли вопросы, зайдите на сайт{" "}
+              <a
+                href="https://cgkb3.ru"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-600 font-semibold hover:underline"
+              >
+                ЦГКБ №3
+              </a>{" "}
+              и перейдите в раздел «Задать вопрос». Мы обязательно свяжемся с Вами.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* STRIP */}
       <section className="bg-gradient-to-r from-cyan-600 to-teal-600 py-10">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
