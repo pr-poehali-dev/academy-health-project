@@ -184,23 +184,23 @@ export default function Index() {
 
       {/* ANNOUNCEMENT */}
       <section className="py-10 bg-rose-50 border-y border-rose-200">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+
+          {/* Заголовок сверху */}
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 rounded-xl bg-rose-500 flex items-center justify-center shrink-0">
+              <Icon name="Bell" size={20} className="text-white" />
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-black text-slate-800" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              Важная информация
+            </h2>
+          </div>
 
           {/* Альбомный блок */}
-          <div className="bg-white rounded-2xl border border-rose-200 shadow-sm overflow-hidden flex flex-col lg:flex-row">
+          <div className="bg-white rounded-2xl border-2 border-rose-300 shadow-sm overflow-hidden flex flex-col lg:flex-row min-h-[420px]">
 
-            {/* Левая панель — заголовок */}
-            <div className="bg-rose-500 text-white flex flex-col items-center justify-center px-8 py-8 lg:py-0 lg:w-64 shrink-0 gap-3">
-              <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
-                <Icon name="Bell" size={24} className="text-white" />
-              </div>
-              <h2 className="text-2xl font-black text-center leading-snug" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                Важная<br />информация
-              </h2>
-            </div>
-
-            {/* Правая панель — текст */}
-            <div className="p-6 sm:p-8 text-slate-700 leading-relaxed space-y-4 text-base flex-1">
+            {/* Левая часть — текст */}
+            <div className="p-6 sm:p-8 text-slate-700 leading-relaxed space-y-4 text-base lg:w-[55%] shrink-0 border-b-2 lg:border-b-0 lg:border-r-2 border-rose-200">
               <p className="font-bold text-slate-800 text-lg">Уважаемые пациенты!</p>
 
               <p>
@@ -233,10 +233,21 @@ export default function Index() {
                 Если у Вас возникли вопросы, зайдите на сайт ЦГКБ №3 и перейдите в раздел «Задать вопрос». Мы обязательно свяжемся с Вами.
               </p>
 
-              <p className="pt-2 text-rose-500 font-semibold text-base tracking-wide">
-                cgkb3.ru
-              </p>
+              {/* Рамка с сайтом */}
+              <div className="inline-flex items-center gap-2 border-2 border-rose-400 rounded-xl px-4 py-2 mt-2">
+                <Icon name="Globe" size={16} className="text-rose-500" />
+                <span className="text-rose-600 font-bold tracking-wide">cgkb3.ru</span>
+              </div>
             </div>
+
+            {/* Правая часть — место для скриншотов */}
+            <div className="flex-1 flex flex-col items-center justify-center gap-3 p-6 bg-rose-50/50">
+              <div className="w-16 h-16 rounded-2xl bg-rose-100 flex items-center justify-center">
+                <Icon name="Image" size={28} className="text-rose-300" />
+              </div>
+              <p className="text-rose-300 text-sm font-medium text-center">Место для скриншотов</p>
+            </div>
+
           </div>
 
         </div>
