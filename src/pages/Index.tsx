@@ -275,7 +275,7 @@ export default function Index() {
                   </div>
                   <div className="flex-1 rounded-xl overflow-hidden border border-rose-100 shadow-sm">
                     <img
-                      src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/7fdc154e-3cdc-42a9-94f2-ddac0c9b78c7.jpg"
+                      src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/3da697e5-3ab0-4e49-8a98-3d3aed7e806f.jpg"
                       alt="Мах — запись подтверждена"
                       className="w-full h-auto"
                     />
