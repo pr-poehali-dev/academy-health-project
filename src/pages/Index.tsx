@@ -240,12 +240,33 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Правая часть — место для скриншотов */}
-            <div className="flex-1 flex flex-col items-center justify-center gap-3 p-6 bg-rose-50/50">
-              <div className="w-16 h-16 rounded-2xl bg-rose-100 flex items-center justify-center">
-                <Icon name="Image" size={28} className="text-rose-300" />
+            {/* Правая часть — скриншоты */}
+            <div className="flex-1 flex flex-col gap-3 p-5 bg-rose-50/40">
+              {/* Широкий скриншот — Госуслуги */}
+              <div className="rounded-xl overflow-hidden border border-rose-100 shadow-sm">
+                <img
+                  src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/8fbc9ca6-27ce-4e2e-bdd4-6caaca016236.jpg"
+                  alt="Скриншот Госуслуги — Протоколы исследований"
+                  className="w-full object-cover"
+                />
               </div>
-              <p className="text-rose-300 text-sm font-medium text-center">Место для скриншотов</p>
+              {/* Два вертикальных скриншота — приложение Мах */}
+              <div className="flex gap-3 flex-1">
+                <div className="flex-1 rounded-xl overflow-hidden border border-rose-100 shadow-sm">
+                  <img
+                    src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/eabc6de0-da84-4057-954f-ca637e6fa125.jpg"
+                    alt="Скриншот Мах — направление на госпитализацию"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div className="flex-1 rounded-xl overflow-hidden border border-rose-100 shadow-sm">
+                  <img
+                    src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/7fdc154e-3cdc-42a9-94f2-ddac0c9b78c7.jpg"
+                    alt="Скриншот Мах — запись подтверждена"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+              </div>
             </div>
 
           </div>
