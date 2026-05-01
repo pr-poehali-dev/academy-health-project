@@ -255,8 +255,8 @@ export default function Index() {
                 </div>
                 <div className="rounded-xl overflow-hidden border border-rose-100 shadow-sm mt-2">
                   <img
-                    src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/a5c83146-6743-4b4f-9bf8-a428d63ca2cd.jpg"
-                    alt="Госуслуги — второй скриншот"
+                    src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/db0c9f5c-fad4-40c7-abb2-9b4a932ef225.jpg"
+                    alt="Госуслуги — Протоколы консультаций"
                     className="w-full h-auto"
                   />
                 </div>
