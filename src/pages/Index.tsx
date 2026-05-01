@@ -241,32 +241,48 @@ export default function Index() {
             </div>
 
             {/* Правая часть — скриншоты */}
-            <div className="flex-1 flex flex-col gap-3 p-5 bg-rose-50/40">
-              {/* Широкий скриншот — Госуслуги */}
-              <div className="rounded-xl overflow-hidden border border-rose-100 shadow-sm">
-                <img
-                  src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/8fbc9ca6-27ce-4e2e-bdd4-6caaca016236.jpg"
-                  alt="Скриншот Госуслуги — Протоколы исследований"
-                  className="w-full object-cover"
-                />
-              </div>
-              {/* Два вертикальных скриншота — приложение Мах */}
-              <div className="flex gap-3 flex-1">
-                <div className="flex-1 rounded-xl overflow-hidden border border-rose-100 shadow-sm">
+            <div className="flex-1 flex flex-col gap-4 p-5 bg-rose-50/40">
+
+              {/* Госуслуги */}
+              <div>
+                <p className="text-xs font-semibold text-rose-400 uppercase tracking-widest mb-1.5 pl-1">Госуслуги</p>
+                <div className="rounded-xl overflow-hidden border border-rose-100 shadow-sm">
                   <img
-                    src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/eabc6de0-da84-4057-954f-ca637e6fa125.jpg"
-                    alt="Скриншот Мах — направление на госпитализацию"
-                    className="w-full h-full object-cover object-top"
+                    src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/8fbc9ca6-27ce-4e2e-bdd4-6caaca016236.jpg"
+                    alt="Госуслуги — Протоколы исследований"
+                    className="w-full h-auto"
                   />
                 </div>
-                <div className="flex-1 rounded-xl overflow-hidden border border-rose-100 shadow-sm">
+                <div className="rounded-xl overflow-hidden border border-rose-100 shadow-sm mt-2">
                   <img
-                    src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/7fdc154e-3cdc-42a9-94f2-ddac0c9b78c7.jpg"
-                    alt="Скриншот Мах — запись подтверждена"
-                    className="w-full h-full object-cover object-top"
+                    src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/a5c83146-6743-4b4f-9bf8-a428d63ca2cd.jpg"
+                    alt="Госуслуги — второй скриншот"
+                    className="w-full h-auto"
                   />
                 </div>
               </div>
+
+              {/* Приложение Мах */}
+              <div>
+                <p className="text-xs font-semibold text-rose-400 uppercase tracking-widest mb-1.5 pl-1">Приложение «Мах»</p>
+                <div className="flex gap-2">
+                  <div className="flex-1 rounded-xl overflow-hidden border border-rose-100 shadow-sm">
+                    <img
+                      src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/eabc6de0-da84-4057-954f-ca637e6fa125.jpg"
+                      alt="Мах — направление на госпитализацию"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="flex-1 rounded-xl overflow-hidden border border-rose-100 shadow-sm">
+                    <img
+                      src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/7fdc154e-3cdc-42a9-94f2-ddac0c9b78c7.jpg"
+                      alt="Мах — запись подтверждена"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
+              </div>
+
             </div>
 
           </div>
