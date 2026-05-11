@@ -251,7 +251,7 @@ export default function Index() {
 
               {/* Приложение Мах */}
               <div>
-                <p className="text-xs font-semibold text-sky-400 uppercase tracking-widest mb-1.5 pl-1">Пример в приложении «Max»</p>
+                <p className="text-xs font-semibold text-sky-400 uppercase tracking-widest mb-1.5 pl-1">Пример уведомлений в приложении «Max»</p>
                 <div className="flex gap-2">
                   <div className="flex-1 rounded-xl overflow-hidden border border-sky-100 shadow-sm">
                     <img
