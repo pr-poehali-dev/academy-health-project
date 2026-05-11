@@ -183,50 +183,37 @@ export default function Index() {
       </section>
 
       {/* ANNOUNCEMENT */}
-      <section className="py-10 bg-rose-50 border-y border-rose-200">
+      <section className="py-10 bg-sky-50 border-y border-sky-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
           {/* Заголовок сверху */}
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 rounded-xl bg-rose-500 flex items-center justify-center shrink-0">
-              <Icon name="Bell" size={20} className="text-white" />
-            </div>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-800" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               Важная информация
             </h2>
           </div>
 
           {/* Альбомный блок */}
-          <div className="bg-white rounded-2xl border-2 border-rose-300 shadow-sm overflow-hidden flex flex-col lg:flex-row min-h-[420px]">
+          <div className="bg-white rounded-2xl border-2 border-sky-300 shadow-sm overflow-hidden flex flex-col lg:flex-row min-h-[420px]">
 
             {/* Левая часть — текст */}
-            <div className="p-6 sm:p-8 text-slate-700 leading-relaxed space-y-4 text-base lg:w-[55%] shrink-0 border-b-2 lg:border-b-0 lg:border-r-2 border-rose-200">
+            <div className="p-6 sm:p-8 text-slate-700 leading-relaxed space-y-4 text-base lg:w-[55%] shrink-0 border-b-2 lg:border-b-0 lg:border-r-2 border-sky-200">
               <p className="font-bold text-slate-800 text-lg">Уважаемые пациенты!</p>
 
               <p>
-                Информируем Вас о том, что все действия, совершённые в Вашей электронной карте, такие, как запись на приём к врачу, направления на лабораторные и инструментальные методы исследований, прикреплённые результаты исследований, оформленные протоколы консультаций и прочие, могут приходить Вам на портал «Госуслуги» и в сообщения приложения «Мах».
+                Информируем Вас о том, что все действия, совершенные в Вашей электронной карте, такие, как запись на прием к врачу, направления на лабораторные и инструментальные методы исследований, прикреплённые результаты исследований, оформленные протоколы консультаций и прочие, могут приходить Вам на портал «Госуслуги» и в сообщения приложения «Мах».
               </p>
 
-              <div>
-                <p className="font-semibold text-slate-800 mb-2">Основные формулировки сообщений:</p>
-                <ul className="space-y-1.5 pl-2">
-                  {[
-                    "Протокол консультации",
-                    "Протокол исследований",
-                    "Запись на приём",
-                    "Направление на госпитализацию, восстановительное лечение, обследование или консультацию",
-                    "Эпикриз по законченному случаю амбулаторный",
-                  ].map((item) => (
-                    <li key={item} className="flex items-start gap-2">
-                      <span className="mt-2 w-1.5 h-1.5 rounded-full bg-rose-400 shrink-0" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <p>
+                Уведомления, поступающие через портал «Госуслуги» о записи на исследование/госпитализацию/обследование/консультацию, могут содержать обобщенное наименование группы медицинских услуг.
+              </p>
 
               <p>
-                Напоминаем, что портал «Госуслуги» и приложение «Мах» не связаны с рабочей программой поликлиники. В связи с этим сообщения могут приходить с опозданием. Также оповещаем, что некоторые действия и результаты отображаться не будут.
+                Например, Вам выдано направление на лабораторные исследования — это будет входить в группу «Направление на госпитализацию, восстановительное лечение, обследование или консультацию».
+              </p>
+
+              <p>
+                Напоминаем, что портал «Госуслуги» и приложение «Мах» не связаны с рабочей программой поликлиники. В связи с этим, сообщения могут приходить с опозданием. Также оповещаем, что некоторые действия и результаты отображаться не будут.
               </p>
 
               <p>
@@ -234,26 +221,26 @@ export default function Index() {
               </p>
 
               {/* Рамка с сайтом */}
-              <div className="inline-flex items-center gap-2 border-2 border-rose-400 rounded-xl px-4 py-2 mt-2">
-                <Icon name="Globe" size={16} className="text-rose-500" />
-                <span className="text-rose-600 font-bold tracking-wide">cgkb3.ru</span>
+              <div className="inline-flex items-center gap-2 border-2 border-sky-400 rounded-xl px-4 py-2 mt-2">
+                <Icon name="Globe" size={16} className="text-sky-500" />
+                <span className="text-sky-600 font-bold tracking-wide">cgkb3.ru</span>
               </div>
             </div>
 
             {/* Правая часть — скриншоты */}
-            <div className="flex-1 flex flex-col gap-4 p-5 bg-rose-50/40">
+            <div className="flex-1 flex flex-col gap-4 p-5 bg-sky-50/40">
 
               {/* Госуслуги */}
               <div>
-                <p className="text-xs font-semibold text-rose-400 uppercase tracking-widest mb-1.5 pl-1">Госуслуги</p>
-                <div className="rounded-xl overflow-hidden border border-rose-100 shadow-sm">
+                <p className="text-xs font-semibold text-sky-400 uppercase tracking-widest mb-1.5 pl-1">Пример уведомлений на «Госуслугах»</p>
+                <div className="rounded-xl overflow-hidden border border-sky-100 shadow-sm">
                   <img
                     src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/8fbc9ca6-27ce-4e2e-bdd4-6caaca016236.jpg"
                     alt="Госуслуги — Протоколы исследований"
                     className="w-full h-auto"
                   />
                 </div>
-                <div className="rounded-xl overflow-hidden border border-rose-100 shadow-sm mt-2">
+                <div className="rounded-xl overflow-hidden border border-sky-100 shadow-sm mt-2">
                   <img
                     src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/db0c9f5c-fad4-40c7-abb2-9b4a932ef225.jpg"
                     alt="Госуслуги — Протоколы консультаций"
@@ -264,16 +251,16 @@ export default function Index() {
 
               {/* Приложение Мах */}
               <div>
-                <p className="text-xs font-semibold text-rose-400 uppercase tracking-widest mb-1.5 pl-1">Приложение «Мах»</p>
+                <p className="text-xs font-semibold text-sky-400 uppercase tracking-widest mb-1.5 pl-1">Пример в приложении «Max»</p>
                 <div className="flex gap-2">
-                  <div className="flex-1 rounded-xl overflow-hidden border border-rose-100 shadow-sm">
+                  <div className="flex-1 rounded-xl overflow-hidden border border-sky-100 shadow-sm">
                     <img
                       src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/eabc6de0-da84-4057-954f-ca637e6fa125.jpg"
                       alt="Мах — направление на госпитализацию"
                       className="w-full h-auto"
                     />
                   </div>
-                  <div className="flex-1 rounded-xl overflow-hidden border border-rose-100 shadow-sm">
+                  <div className="flex-1 rounded-xl overflow-hidden border border-sky-100 shadow-sm">
                     <img
                       src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/3da697e5-3ab0-4e49-8a98-3d3aed7e806f.jpg"
                       alt="Мах — запись подтверждена"
