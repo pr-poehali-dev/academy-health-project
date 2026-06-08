@@ -216,18 +216,14 @@ export default function Index() {
                 Напоминаем, что портал «Госуслуги» и приложение «Мах» не связаны с рабочей программой поликлиники. В связи с этим, сообщения могут приходить с опозданием. Также оповещаем, что некоторые действия и результаты отображаться не будут.
               </p>
 
-              <p>
-                Если у Вас возникли вопросы, зайдите на сайт ЦГКБ №3 и перейдите в раздел «Задать вопрос». Мы обязательно свяжемся с Вами.
-              </p>
-
               {/* QR-код */}
-              <div className="flex items-center gap-4 border-2 border-sky-200 rounded-xl px-4 py-3 mt-2 bg-sky-50/60">
+              <div className="flex items-center gap-6 border-2 border-sky-200 rounded-2xl px-6 py-5 mt-2 bg-sky-50/60">
                 <img
                   src="https://cdn.poehali.dev/projects/726325e1-c259-467d-87d6-4baa3f261d01/bucket/dcd7a06d-47c3-4e75-8b4f-3184a2996bdc.png"
                   alt="QR-код"
-                  className="w-20 h-20 shrink-0"
+                  className="w-32 h-32 shrink-0"
                 />
-                <p className="text-sky-700 font-medium text-sm leading-snug">Если у Вас остались вопросы, переходите по QR-коду</p>
+                <p className="text-sky-700 font-semibold text-base leading-snug">Если у Вас остались вопросы, переходите по QR-коду</p>
               </div>
             </div>
 
